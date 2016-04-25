@@ -14,8 +14,7 @@ function AddArcs (arcs) {
     }
     goToAddArcPage(arc, function () {
       fillArcForm(arc)
-      createArc()
-      detectArcCreated(function () {
+      createArc(function () {
         addArc(i + 1)
       })
     })
