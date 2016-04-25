@@ -1,19 +1,17 @@
 {
-  "name": "MyTaskList",
+  "name": "DEDE_BULK",
   "manifest_version": 2,
-  "version": "9.0",
-  "description": "Management my everyday's task lists.",
+  "version": "0.0.1",
+  "description": "Importing articles in bulk from a JSON for DEDE CMS.",
   "browser_action": {
     "default_icon": "src/img/icon.png" ,
-    "default_title": "My Task List",
+    "default_title": "DEDE_BULK",
     "default_popup": "src/popup.html"
   },
-  "background": { "scripts":["src/js/bg.js"] },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "js": ["bower_components/jquery2/jquery.js", "src/js/main.js"]
-    },
-    { "js": ["bower_components/jquery2/jquery.js", "src/js/sub.js"], "matches": ["<all_urls>"], "all_frames":true }
+    }
   ]
 }

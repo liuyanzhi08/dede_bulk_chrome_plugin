@@ -1,1 +1,1 @@
-Creating articles in bulk from a json file for Dede CMS
+Importing articles in bulk from a JSON for DEDE CMS

@@ -1,9 +1,9 @@
 require(['config'], function () {
-  requirejs(['jquery'], function ($) {
+  requirejs(['jquery'], function () {
     //var dropInput = document.querySelector('#drop-input')
     var fileInput = document.querySelector(('#file-input'))
 
-    fileInput.addEventListener('change', function (e) {
+    fileInput.addEventListener('change', function () {
       var file = fileInput.files[0]
       readmultifiles([file])
     })
@@ -33,7 +33,7 @@ require(['config'], function () {
           addArc(reader.result)
           // do sth with bin
 
-          readFile(index+1)
+          readFile(index + 1)
         }
         reader.readAsText(file);
       }
