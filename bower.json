@@ -1,0 +1,22 @@
+{
+  "name": "dede_chrome",
+  "authors": [
+    "lyz <702368372@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery2": "^2.0.0",
+    "requirejs": "^2.2.0"
+  }
+}
