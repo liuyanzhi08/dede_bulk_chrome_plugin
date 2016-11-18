@@ -36,9 +36,11 @@ function fillArcForm (arc) {
   var titleInput = $('#title', doc)
   var contentInput = $('textarea[name=body]', doc)
   var typeInput = $('#typeid', doc)
+  var sourceInput = $('#source', doc)
   titleInput.val(arc.title)
   contentInput.val(arc.content)
   typeInput.val(arc.typeId)
+  sourceInput.val(arc.source || '')
 }
 
 function createArc (cb) {
